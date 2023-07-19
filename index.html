@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  behövs??-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet"> -->
+
+    <title>Clara🤍Linus</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <!-- <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css"> -->
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/MGkG4Z1RgAIRYicR/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
+  </head>
+
+<body>
+
+  <!-- ***** Meny Header Area Start ***** -->
+  <header class="header-area header-sticky">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <nav class="main-nav">
+                      <!-- ***** Logo Start ***** -->
+                      <a href="index.html" class="logo">
+                          Clara🤍Linus
+                      </a>
+                      <!-- ***** Logo End ***** -->
+                      <!-- ***** Menu Start ***** -->
+                      <ul class="nav">
+                          <li class="scroll-to-section"><a href="#top" class="active">Start</a></li>
+                          <li><a href="#meetings">Info</a></li>
+                          <li class="scroll-to-section"><a href="#apply">OSA</a></li>
+                          <!-- <li class="has-sub">
+                              <a href="javascript:void(0)">Pages</a>
+                              <ul class="sub-menu">
+                                  <li><a href="meetings.html">Upcoming Meetings</a></li>
+                                  <li><a href="meeting-details.html">Meeting Details</a></li>
+                              </ul>
+                          </li> -->
+                          <li class="scroll-to-section"><a href="#boende">Tips på boende</a></li> 
+                          <li class="scroll-to-section"><a href="#">Önska låt</a></li>
+                          <li class="scroll-to-section"><a href="#contact">Önskelista</a></li> 
+                      </ul>        
+                      <a class='menu-trigger'>
+                          <span>Menu</span>
+                      </a>
+                      <!-- ***** Menu End ***** -->
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="section main-banner" id="top" data-section="section1">
+      <video autoplay muted loop id="bg-video">
+          <source src="assets/images/video.mp4" type="video/mp4" />
+      </video>
+
+      <div class="video-overlay header-text">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="caption">
+              <h2>Lördag 27 Juli 2024</h2>
+              <p>Kom och fira vår livs dag med oss!. bla bla bla</p>
+              <!-- <div class="main-button-red">
+                  <div class="scroll-to-section"><a href="#contact">Join Us Now!</a></div>
+              </div> -->
+          </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="upcoming-meetings" id="meetings">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2>Info</h2>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="categories">
+            <h4>Kort och gott</h4>
+            <ul>
+              <!-- Länk till att lägga till i kalender?? går det?? -->
+              <li><a href="#">När: 27 Juli 2024 kl 15,00</a></li>
+              <li><a href="https://www.svenskakyrkan.se/visby">Vigsel: Visby Domkyrka</a></li>
+              <li><a href="https://www.nygardsherrgard.se/">Fest: Nygårds Herrgård</a></li>
+              <br>
+              <li><a href="#">Klädsel: Kavaj</a></li>
+            </ul>
+            <div class="main-button-red">
+              <a href="#">OSA</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="meeting-item">
+                <div class="thumb">
+                  <!-- <div class="price">
+                    <span>Kl 15:00</span>
+                  </div> -->
+                  <a href="meeting-details.html"><img src="assets/images/kyrka.jpg" alt="Visby Domkyrka"></a>
+                </div>
+                <div class="down-content">
+                  <!-- <div class="date">
+                    <h6>Juli <span>27</span></h6>
+                  </div> -->
+                  <a href="meeting-details.html"><h4>Vigsel</h4></a>
+                  <p>Vigseln kommer att äga rum i Visby Domkyrka med start kl 15,00
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="meeting-item">
+                <div class="thumb">
+                  <!-- <div class="price">
+                    <span>$36.00</span>
+                  </div> -->
+                  <a href="meeting-details.html"><img src="assets/images/festlada.jpg" alt="Nygårdsherrgård"></a>
+                </div>
+                <div class="down-content">
+                  <div class="date">
+                    <h6> <span></span></h6>
+                  </div>
+                  <a href="meeting-details.html"><h4>Fest</h4></a>
+                  <p>Efter vigseln är det bokad transport till Nygårds Herrgård där festen kommer att äga rum i deras festlada.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="meeting-item">
+                <div class="thumb">
+                  <!-- <div class="price">
+                    <span>$14.00</span>
+                  </div> -->
+                  <a href="meeting-details.html"><img src="assets/images/meeting-03.jpg" alt=""></a>
+                </div>
+                <div class="down-content">
+                  <!-- <div class="date">
+                    <h6>Nov <span>26</span></h6>
+                  </div> -->
+                  <a href="meeting-details.html"><h4>Higher Education Conference</h4></a>
+                  <p>Morbi in libero blandit lectus<br>cursus ullamcorper.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="meeting-item">
+                <div class="thumb">
+                  <!-- <div class="price">
+                    <span>$48.00</span>
+                  </div> -->
+                  <a href="meeting-details.html"><img src="assets/images/meeting-04.jpg" alt="Student Training"></a>
+                </div>
+                <div class="down-content">
+                  <!-- <div class="date">
+                    <h6>Nov <span>30</span></h6>
+                  </div> -->
+                  <a href="meeting-details.html"><h4>Student Training Meetup</h4></a>
+                  <p>Morbi in libero blandit lectus<br>cursus ullamcorper.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="apply-now" id="apply">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="item">
+                <h3>APPLY FOR BACHELOR DEGREE</h3>
+                <p>You are allowed to use this edu meeting CSS template for your school or university or business. You can feel free to modify or edit this layout.</p>
+                <div class="main-button-red">
+                  <div class="scroll-to-section"><a href="#contact">Join Us Now!</a></div>
+              </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="item">
+                <h3>Önska låtar till festen</h3>
+                <p>You are not allowed to redistribute the template ZIP file on any other template website. Please contact us for more information.</p>
+                <div class="main-button-yellow">
+                  <div class="scroll-to-section"><a href="#contact">Önska</a></div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="accordions is-first-expanded">
+            <article class="accordion">
+                <div class="accordion-head">
+                    <span>Vigsel</span>
+                    <span class="icon">
+                        <i class="icon fa fa-chevron-right"></i>
+                    </span>
+                </div>
+                <div class="accordion-body">
+                    <div class="content">
+                        <p>If you want to get the latest collection of HTML CSS templates for your websites, you may visit <a rel="nofollow" href="https://www.toocss.com/" target="_blank">Too CSS website</a>. If you need a working contact form script, please visit <a href="https://templatemo.com/contact" target="_parent">our contact page</a> for more info.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="accordion">
+                <div class="accordion-head">
+                    <span>Fest</span>
+                    <span class="icon">
+                        <i class="icon fa fa-chevron-right"></i>
+                    </span>
+                </div>
+                <div class="accordion-body">
+                    <div class="content">
+                        <p>Etiam posuere metus orci, vel consectetur elit imperdiet eu. Cras ipsum magna, maximus at semper sit amet, eleifend eget neque. Nunc facilisis quam purus, sed vulputate augue interdum vitae. Aliquam a elit massa.<br><br>
+                        Nulla malesuada elit lacus, ac ultricies massa varius sed. Etiam eu metus eget nibh consequat aliquet. Proin fringilla, quam at euismod porttitor, odio odio tempus ligula, ut feugiat ex erat nec mauris. Donec viverra velit eget lectus sollicitudin tincidunt.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="accordion">
+                <div class="accordion-head">
+                    <span>Transport</span>
+                    <span class="icon">
+                        <i class="icon fa fa-chevron-right"></i>
+                    </span>
+                </div>
+                <div class="accordion-body">
+                    <div class="content">
+                        <p>Ut vehicula mauris est, sed sodales justo rhoncus eu. Morbi porttitor quam velit, at ullamcorper justo suscipit sit amet. Quisque at suscipit mi, non efficitur velit.<br><br>
+                        Cras et tortor semper, placerat eros sit amet, porta est. Mauris porttitor sapien et quam volutpat luctus. Nullam sodales ipsum ac neque ultricies varius.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="accordion last-accordion">
+                <div class="accordion-head">
+                    <span>Önska låtar till festen</span>
+                    <span class="icon">
+                        <i class="icon fa fa-chevron-right"></i>
+                    </span>
+                </div>
+                <div class="accordion-body">
+                    <div class="content">
+                        <p>Då vi vill att musiken på festen ska passa alla så har ni möjlighet att önska låtar här till vänster som vi kommer att lägga till på spellistan, vi kommer dansa hela natten till.<br>.</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="boende-förslag" id="boende">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2>Förslag på boende</h2>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="owl-boende-item owl-carousel">
+            <div class="item">
+              <img src="assets/images/scandic.jpg" alt="Scandic">
+              <div class="down-content">
+                <h4> <a href="https://www.scandichotels.se/hotell/sverige/visby/scandic-visby">Scandic Visby</a></h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>0km till visby</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/kneippbyn.jpg" alt="Kneippbyn">
+              <div class="down-content">
+                <h4><a href="https://kneippbyn.se/boende/">Kneippbyn</a></h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>5km Söder om Visby</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/gustavsvik.jpg" alt="Gustavsvik">
+              <div class="down-content">
+                <h4><a href="https://www.visbygustavsvik.se/bo-vid-havet/">Gustavsvik</a></h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>3,5km Norr om Visby</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/kokoloko.jpg" alt="Kokoloko">
+              <div class="down-content">
+                <h4><a href="https://hotelkokoloko.se/">Hotell Kokoloko</a></h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>1km söder om Visby</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/snäck.jpg" alt="Snäck">
+              <div class="down-content">
+                <h4><a href="https://www.snack.nu/">Snäck</a></h4>
+                <div class="info">
+                  <div class="row">
+                    <div class="col-8">
+                      <ul>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                      </ul>
+                    </div>
+                    <div class="col-4">
+                       <span>3km norr om Visby</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="our-facts">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2>Tid kvar till Bröllopet</h2>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-12">
+                  <div class="count-area-content">
+                    <div class="count-digit"id="days"></div>
+                    <div class="count-title">Dagar</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="count-area-content">
+                    <div class="count-digit"id="hours"></div>
+                    <div class="count-title">Timmar</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="count-area-content">
+                    <div class="count-digit" id="minutes"></div>
+                    <div class="count-title">Minuter</div>
+                  </div>
+                <div class="col-12">
+                  <div class="count-area-content">
+                    <div class="count-digit" id="seconds"></div>
+                    <div class="count-title">Sekunder</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- </div>  -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-us" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 align-self-center">
+          <div class="row">
+            <div class="col-lg-12">
+              <form id="contact" action="" method="post">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h2>Frågor</h2>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                      <input name="full_name" type="text" id="name" placeholder="Namn..." required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                    <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Email som vi kan svara dig på..." required="">
+                  </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="message" type="text" class="form-control" id="message" placeholder="Meddelande..." required=""></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="button" onclick="SubForm()">Skicka meddelande</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="right-info">
+            <ul>
+              <li>
+                <h6>Våra Toastmasters:</h6>
+                <span>Fredrika Ellefors & Christian Ellefors</span>
+              </li>
+              <li>
+                <h6>Nås via Mejl:</h6>
+                <span>fredrika.ellefors@hotmail.com</span>
+              </li>
+              <li>
+                <h6>Eller telefon:</h6>
+                <span>Fredrika:123 456 789(endast sms)
+                </span>
+                <span>Christian: 123 324 324
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>&copy; Untitled. Hemsida: Clara Wiman, Design: Linus Kanth</p>
+    </div>
+
+    <form id="myForm">
+      <label>Namn</label>
+      <br/>
+      <input name="full_name" />
+      <br/>
+      <label>Mail</label>
+      <br/>
+      <input name="email" />
+      <br/>
+      <label>Meddelande1</label>
+      <br/>
+      <textarea name="message">
+      </textarea>
+      <br/>
+      <br/>
+    </form>
+    <button onclick="SubForm()">Submit</button>
+  </section>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
+          e.preventDefault();
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+
+    <script>
+      var countDownDate = new Date("Juli 27, 2024 15:00:00").getTime();
+      var x= setInterval(function(){
+        var now= new Date().getTime();
+        var distance = countDownDate-now;
+
+        var days = Math.floor(distance/(1000*60*60*24));
+        var hours = Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+        var minutes = Math.floor((distance %(1000*60*60))/(1000*60));
+        var seconds = Math.floor((distance%(1000*60))/1000);
+
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+
+        if(distance<0){
+          clearInterval(x);
+          document.getElementById("days").innerHTML = "00";
+        document.getElementById("hours").innerHTML = "00";
+        document.getElementById("minutes").innerHTML = "00";
+        document.getElementById("seconds").innerHTML = "00";
+        }
+
+      },1000);
+    </script>
+</body>
+
+</body>
+</html>
